@@ -55,3 +55,6 @@ body{
 .scst{
     color:var(--primary-color);
 }
+.active{
+    font-weight: bolder;
+}
