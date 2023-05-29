@@ -46,3 +46,12 @@ body{
 .nav-link:active{
     text-decoration: underline;
 }
+.carousel-control-prev-icon  {
+    background-color:var(--primary-color);
+}
+.carousel-control-next-icon{
+    background-color: var(--primary-color);
+}
+.scst{
+    color:var(--primary-color);
+}
