@@ -65,20 +65,66 @@ body{
     background-color: var(--third-color) !important;
     border: none;
 }
+
 @media (min-width:319px)and (max-width:480px){
-   .card{
-    margin-left: 2.5rem !important;
+    .card1{
+     margin-left: 2.5rem !important;
+    
+    }
    }
-  }
-
-  @media (min-width:418px) and (max-width:1200px){
-   .card{
-    margin-left: 5rem;
-   } 
-  }
-  @media (min-width:1201px) and (max-width:1600px){
-   .card{
-    margin-left:0.99rem;
+ 
+   @media (min-width:418px) and (max-width:1200px){
+    .card1{
+     margin-left: 5rem;
+    } 
    }
-
+   @media (min-width:1201px) and (max-width:1600px){
+    .card1{
+     margin-left:0.99rem;
+    }
+ 
+   }
+ .heading-bc{
+    height:5vh;
+    background-color: var(--primary-color);
+    
+    margin-top: 3rem;
+    text-align: center;
+    color: black !important;
+ }
+ .navigate{
+    text-decoration: none;
+    display: inline;
+    
+ }
+ @media (min-width:319px)and (max-width:480px){
+    .card2{
+     width: 50%;
+     text-align: left;
+    }
+    a{
+        text-align: left;
+    }
+   }
+   .card1 {
+    background-color: #EEE9DA;
+    transition: box-shadow 0.3s ease-in-out; 
+   }
+  
+  .card1:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .arrow{
+    position: fixed;
+    height:2rem;
+    right: 0;
+    top: 5.3rem;
+    margin-right:-0.6rem;
+    opacity: 0.5;
+   
+  }
+  .list-group-item{
+    background-color: var(--third-color);
+    font-weight: bolder;
+    font-size: x-large;
   }
