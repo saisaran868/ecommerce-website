@@ -1,13 +1,14 @@
-// Getting references to the form elements
+// Get references to the form elements
 const emailInput = document.querySelector("#floatingInput");
 const passwordInput = document.querySelector("#floatingPassword");
 const signUpButton = document.querySelector(".bt");
+const errorAlert = document.querySelector("#errorAlert");
 
-// Adding event listener to the form's submit button
+// Add event listener to the form's submit button
 signUpButton.addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent form submission when clicked sign up button it wont go to index.html
+  event.preventDefault(); // Prevent form submission
 
-  // Getting input values
+  // Get the input values
   const email = emailInput.value;
   const password = passwordInput.value;
 
@@ -25,16 +26,22 @@ signUpButton.addEventListener("click", function(event) {
     passwordFlag = true;
   }
 
-  // Performing the redirection if data is valid
+  // Perform the redirection if data is valid
   if (emailFlag && passwordFlag) {
     window.location.href = "home.html";
   } else {
     // Display an error message
     if (!emailFlag) {
-      alert("Please enter a valid email address.");
+      showError("Please enter a valid email address.");
     }
     if (!passwordFlag) {
-      alert("Password length should be greater than or equal to 6 characters.");
+      showError("Password length should be greater than or equal to 6 characters.");
     }
   }
 });
+
+// Function to show the error message in the modal dialog
+function showError(message) {
+  errorAlert.textContent = message;
+  errorAlert.style.display = "block";
+}
