@@ -128,3 +128,25 @@ body{
     font-weight: bolder;
     font-size: x-large;
   }
+
+  /* buynow and add to cart btn css*/
+  .bp{
+    background-color: var(--secondary-color);
+    border: none;
+    font-weight: 400;
+  }
+  .bp:hover{
+    background-color: var(--primary-color);
+    
+  }
+
+  .bo{
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight:500;
+  }
+  .bo:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
