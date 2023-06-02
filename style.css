@@ -161,3 +161,10 @@ body{
     border-color: var(--primary-color);
   }
   
+/*  tv image*/
+.sony{
+    padding-top: 1rem !important;
+}
+.haier{
+    margin-top: 2.5rem;
+}
