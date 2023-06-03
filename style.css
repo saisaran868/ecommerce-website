@@ -89,6 +89,7 @@ body{
     }
     .bp{
         margin-right: 1rem;
+        margin-bottom: 5px;
     } 
    }
    @media (min-width:1201px) and (max-width:1600px){
